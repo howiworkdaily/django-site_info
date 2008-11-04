@@ -4,9 +4,6 @@ def site_info(request):
     """
     Adds site-specific meta information to the context
     
-    To employ, add site_info reference to your project settings 
-    TEMPLATE_CONTEXT_PROCESSORS.
-    
     """
     
     SITE_NAME = getattr(settings, 'SITE_NAME', None)
