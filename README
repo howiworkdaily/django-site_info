@@ -1,4 +1,24 @@
 
 Simple context processor that adds SITE_NAME, SITE_URL, SITE_DOMAIN to the active request context.
 
+Instructions
+------------
 
+1) Add SITE_NAME, SITE_URL, SITE_DOMAIN variables to your settings file.
+
+Example:
+
+SITE_URL = 'something here'
+SITE_DOMAIN = 'something here'
+SITE_NAME = 'something here'
+
+2) Add the site_info project to your PYTHONPATH
+
+3) Add the processor to your settings file's TEMPLATE_CONTEXT_PROCESSORS
+
+Example:
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    ...
+    'site_info.context.processors.site_info',
+)
