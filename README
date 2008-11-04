@@ -1,0 +1,4 @@
+
+Simple context processor that adds SITE_NAME, SITE_URL, SITE_DOMAIN to the active request context.
+
+
